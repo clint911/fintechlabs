@@ -1,35 +1,13 @@
 import { ArrowRight, Shield, Users, Target, Lightbulb, Globe, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import Navigation from "@/components/navigation"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/10 border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <a href="/" className="text-2xl font-bold text-white">
-              FinTech<span className="text-purple-400">Labs</span>
-            </a>
-            <div className="hidden md:flex space-x-8">
-              <a href="/services" className="text-white/80 hover:text-white transition-colors">
-                Services
-              </a>
-              <a href="/about" className="text-white font-medium">
-                About
-              </a>
-              <a href="/portfolio" className="text-white/80 hover:text-white transition-colors">
-                Portfolio
-              </a>
-              <a href="/contact" className="text-white/80 hover:text-white transition-colors">
-                Contact
-              </a>
-            </div>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">Get Started</Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
